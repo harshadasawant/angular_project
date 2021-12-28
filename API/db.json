@@ -1,0 +1,72 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "users": [
+    {
+      "user": "harshada",
+      "password": "daksh",
+      "id": 4
+    },
+    {
+      "user": "harsha@gmail.com",
+      "password": "hello",
+      "id": 5
+    },
+    {
+      "user": "prak@gmail.com",
+      "password": "123",
+      "id": 6
+    },
+    {
+      "user": "prak@gmail.com",
+      "password": "123",
+      "id": 7
+    },
+    {
+      "user": "prak@gmail.com",
+      "password": "123",
+      "id": 8
+    },
+    {
+      "user": "prasdfdsk@gmail.com",
+      "password": "123sdf",
+      "id": 9
+    },
+    {
+      "user": "vh@d.com",
+      "password": "dgf",
+      "id": 10
+    },
+    {
+      "user": "new user",
+      "password": "pass@1234",
+      "id": 11
+    },
+    {
+      "user": "new user1",
+      "password": "pass@1234",
+      "id": 12
+    },
+    {
+      "user": "sdf@gm.com",
+      "password": "1234",
+      "id": 13
+    }
+  ],
+  "dummy": {}
+}

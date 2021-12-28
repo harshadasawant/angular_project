@@ -1,0 +1,49 @@
+<!-- <p>login works!</p>
+<p>{{title | uppercase}}</p>
+<p>{{capString(title)}}</p>
+<p>{{title | lowercase}}</p>
+<p>{{title}}</p>
+<p>{{title | slice: 3:8}}</p>
+<p>{{obj | json | uppercase}}</p>
+<p>{{today | date : 'fullDate'}}</p>
+<p>{{003.3400 | number : '1.2'}}</p>
+<p>{{100|currency :'USD'}}</p>
+io
+<p>{{30 | usdInr1 : 70}}</p> -->
+<!-- <h1 *ngIf="show; then thenBlock else elseBlock">hello</h1> -->
+<h1 *ngIf="show; else elseBlock">hello</h1>
+<!-- <ng-template #thenBlock>Content to render when condition is true.</ng-template> -->
+<ng-template #elseBlock>
+    <h1>Else Block</h1>
+</ng-template>
+
+<ng-template [ngIf]="color=='blue'"><div style="color: blue;">Content to render when condition is true.</div></ng-template>
+<ng-template [ngIf]="color=='red'"><div style="color: red;">Content to render when condition is true.</div></ng-template>
+<ng-template [ngIf]="color=='purple'"><div style="color: purple;">Content to render when condition is true.</div></ng-template>
+<!-- <li *ngFor="let item of items">{{item}}</li> -->
+<table class='table'>  
+    <thead>  
+        <tr>  
+            <th>Title</th>  
+            <th>Director</th>  
+            <th>Cast</th>  
+            <th>Release Date</th>  
+        </tr>  
+    </thead>  
+    <tbody>  
+        <tr *ngFor="let movie of movies;">  
+            <td>{{movie.title}}</td>  
+            <td>{{movie.director}}</td>  
+            <td>{{movie.cast}}</td>  
+            <td>{{movie.releaseDate}}</td>  
+            <td *ngFor="let a of movie.add;">{{a}}</td>
+
+        </tr>  
+    </tbody>  
+</table>  
+
+<div class='row' [ngSwitch]="selectedValue">  
+    <div *ngSwitchCase="'One'">One is Pressed</div>  
+    <div *ngSwitchCase="'Two'">Two is Selected</div>  
+    <div *ngSwitchDefault>Default Option</div>  
+</div>  

@@ -1,0 +1,17 @@
+<p>reactiveform works!</p>
+<form [formGroup]="loginForm" (ngSubmit)="loginUser(loginForm.value)">
+<input type="text" name="user" formControlName="user" >
+<br/>
+<span style="color: red;" *ngIf="user1 && user1.invalid && user1.touched" >This field is not valid</span>
+<br>
+<input type="text" name="password"  formControlName="password" >
+<br/>
+<button>Login</button>
+
+</form>
+<button (click)='display()'>Disaply</button>
+<ul> 
+    <li *ngFor="let user of users">
+{{user.user}}------{{user.password}}
+
+</li> </ul> 
